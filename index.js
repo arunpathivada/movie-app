@@ -3,7 +3,7 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const port = 3000;
+const port = "https://express.onrender.com/";
 
 const API_KEY = "api_key=de5ea25dccaf1a01e8293b9034f465d1";
 const Base_url = "https://api.themoviedb.org/3";
@@ -68,5 +68,5 @@ app.post('/movies', async (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
+  console.log(`Server is running at https://express.onrender.com/`);
 });
